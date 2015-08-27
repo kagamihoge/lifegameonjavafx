@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<TitledPane fx:id="titledPane" alignment="TOP_LEFT" text="Lifegame" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kagamihoge.lifegamewithoopexercise.ui.LifeGameController">
+   <content>
+      <VBox spacing="5.0">
+         <children>
+            <Pane style="-fx-border-color: black;">
+               <children>
+                  <Canvas fx:id="lifegameCanvas" height="400.0" onMouseClicked="#canvasclicked" styleClass="background-color:re" width="400.0" />
+               </children>
+            </Pane>
+            <HBox>
+               <children>
+                  <Label text="縦：" />
+                  <ComboBox fx:id="heightComboBox" prefWidth="150.0" />
+                  <Label text="横：" />
+                  <ComboBox fx:id="widthComboBox" prefWidth="150.0" />
+                  <Label text="色：" />
+                  <ColorPicker fx:id="liveCellColorPicker" onAction="#colorchanged" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="シード：" />
+                  <Slider fx:id="seedSlider" blockIncrement="0.0" majorTickUnit="0.01" max="1.0" min="0.0" minorTickCount="0" showTickLabels="true" showTickMarks="true" snapToTicks="true" HBox.hgrow="ALWAYS" value="0.3" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="スピード" />
+                  <Slider fx:id="speedSlider" blockIncrement="1.0" majorTickUnit="1.0" max="20.0" min="1.0" minorTickCount="1" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="startAndStopButton" mnemonicParsing="false" onAction="#startAndStopButtonClicked" text="開始" />
+                  <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetButtonClieckd" text="初期化" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </content>
+</TitledPane>
