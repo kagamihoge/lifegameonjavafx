@@ -1,10 +1,12 @@
-package kagamihoge.lifegamewithoopexercise.core.grid;
+package kagamihoge.lifegameonjavafx.core.grid;
 
-import static kagamihoge.lifegamewithoopexercise.core.cell.CellFactoryForTest.cellFactory;
+import static kagamihoge.lifegameonjavafx.core.cell.CellFactoryForTest.cellFactory;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import kagamihoge.lifegamewithoopexercise.core.grid.GridOfCells;
 
 public class GridOfCellsTest {
     

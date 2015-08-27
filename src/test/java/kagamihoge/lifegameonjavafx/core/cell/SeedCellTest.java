@@ -1,8 +1,8 @@
-package kagamihoge.lifegamewithoopexercise.core.cell;
+package kagamihoge.lifegameonjavafx.core.cell;
 
+import static kagamihoge.lifegameonjavafx.core.cell.CellFactoryForTest.cellFactory;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
-import static kagamihoge.lifegamewithoopexercise.core.cell.CellFactoryForTest.cellFactory;
 
 import org.junit.Test;
 

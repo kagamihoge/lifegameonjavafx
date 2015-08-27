@@ -1,43 +1,43 @@
-package kagamihoge.lifegamewithoopexercise.core.cell;
+package kagamihoge.lifegameonjavafx.core.cell;
 
-import static kagamihoge.lifegamewithoopexercise.core.cell.CellFactoryForTest.cellFactory;
+import static kagamihoge.lifegameonjavafx.core.cell.CellFactoryForTest.cellFactory;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
-import kagamihoge.lifegamewithoopexercise.core.cell.impl.LiveCell;
+import kagamihoge.lifegamewithoopexercise.core.cell.impl.DeadCell;
 
-public class LiveCellTest {
+public class DeadCellTest {
 
     @Test
     public void testIsLive() {
-        assertThat(new LiveCell(cellFactory).isLive(), is(true));
+        assertThat(new DeadCell(cellFactory).isLive(), is(false));
     }
     
     @Test
     public void testCellTransitionEventHandler() {
-        LiveCell cell = new LiveCell(cellFactory);
+        DeadCell cell = new DeadCell(cellFactory);
         cell.setEventListner((x, y, c) -> {
-            assertThat(x, is(0));
-            assertThat(y, is(10));
-            assertThat(c.isLive(), is(true));
+            assertThat(x, is(10));
+            assertThat(y, is(0));
+            assertThat(c.isLive(), is(false));
         });
-        cell.afterTransition(0, 10);
+        cell.afterTransition(10, 0);
     }
 
     @Test
     public void testFlip() {
-        assertThat(new LiveCell(cellFactory).flip().isLive(), is(false));
+        assertThat(new DeadCell(cellFactory).flip().isLive(), is(true));
     }
     
     @Test
     public void testTransition() {
-        LiveCell cell = new LiveCell(cellFactory);
+        DeadCell cell = new DeadCell(cellFactory);
         
         assertThat(cell.transition(0).isLive(), is(false));
         assertThat(cell.transition(1).isLive(), is(false));
-        assertThat(cell.transition(2).isLive(), is(true));
+        assertThat(cell.transition(2).isLive(), is(false));
         assertThat(cell.transition(3).isLive(), is(true));
         assertThat(cell.transition(4).isLive(), is(false));
         assertThat(cell.transition(5).isLive(), is(false));

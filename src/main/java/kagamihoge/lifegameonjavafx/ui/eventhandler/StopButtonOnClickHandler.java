@@ -1,4 +1,4 @@
-package kagamihoge.lifegamewithoopexercise.ui.eventhandler;
+package kagamihoge.lifegameonjavafx.ui.eventhandler;
 
 import kagamihoge.lifegamewithoopexercise.ui.model.LifeGameModel;
 

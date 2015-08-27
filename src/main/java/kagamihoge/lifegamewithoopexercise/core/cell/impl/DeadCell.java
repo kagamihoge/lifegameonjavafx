@@ -1,9 +1,9 @@
 package kagamihoge.lifegamewithoopexercise.core.cell.impl;
 
-import kagamihoge.lifegamewithoopexercise.core.cell.Cell;
-import kagamihoge.lifegamewithoopexercise.core.cell.CellFactory;
+import kagamihoge.lifegameonjavafx.core.cell.Cell;
+import kagamihoge.lifegameonjavafx.core.cell.CellFactory;
+import kagamihoge.lifegameonjavafx.core.rule.DeadCellRule;
 import kagamihoge.lifegamewithoopexercise.core.event.CellTransitionEventHandler;
-import kagamihoge.lifegamewithoopexercise.core.rule.DeadCellRule;
 
 public class DeadCell implements Cell {
     

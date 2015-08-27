@@ -1,9 +1,11 @@
-package kagamihoge.lifegamewithoopexercise.core.rule;
+package kagamihoge.lifegameonjavafx.core.rule;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import kagamihoge.lifegameonjavafx.core.rule.DeadCellRule;
 
 public class DeadCellRuleTest {
 

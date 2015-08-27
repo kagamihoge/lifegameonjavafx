@@ -1,4 +1,4 @@
-package kagamihoge.lifegamewithoopexercise.ui.eventhandler;
+package kagamihoge.lifegameonjavafx.ui.eventhandler;
 
 public interface ControllButtonOnClickHandler {
     void handle();

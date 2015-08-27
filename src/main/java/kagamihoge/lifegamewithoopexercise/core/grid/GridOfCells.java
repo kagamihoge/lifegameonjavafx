@@ -1,7 +1,7 @@
 package kagamihoge.lifegamewithoopexercise.core.grid;
 
-import kagamihoge.lifegamewithoopexercise.core.cell.Cell;
-import kagamihoge.lifegamewithoopexercise.core.cell.CellFactory;
+import kagamihoge.lifegameonjavafx.core.cell.Cell;
+import kagamihoge.lifegameonjavafx.core.cell.CellFactory;
 
 public class GridOfCells {
     protected Cell[][] cells = new Cell[0][0];

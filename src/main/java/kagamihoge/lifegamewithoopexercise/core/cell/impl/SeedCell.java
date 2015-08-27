@@ -1,7 +1,7 @@
 package kagamihoge.lifegamewithoopexercise.core.cell.impl;
 
-import kagamihoge.lifegamewithoopexercise.core.cell.Cell;
-import kagamihoge.lifegamewithoopexercise.core.cell.CellFactory;
+import kagamihoge.lifegameonjavafx.core.cell.Cell;
+import kagamihoge.lifegameonjavafx.core.cell.CellFactory;
 import kagamihoge.lifegamewithoopexercise.core.event.CellTransitionEventHandler;
 
 public class SeedCell implements Cell {

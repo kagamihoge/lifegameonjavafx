@@ -1,4 +1,4 @@
-package kagamihoge.lifegamewithoopexercise.core.cell;
+package kagamihoge.lifegameonjavafx.core.cell;
 
 public interface CellFactory {
 

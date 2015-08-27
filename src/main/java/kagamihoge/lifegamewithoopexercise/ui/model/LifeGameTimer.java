@@ -5,7 +5,7 @@ import static kagamihoge.lifegamewithoopexercise.ui.Cell.SIZE;
 import javafx.animation.AnimationTimer;
 import javafx.beans.property.DoubleProperty;
 import javafx.scene.canvas.GraphicsContext;
-import kagamihoge.lifegamewithoopexercise.core.LifeGame;
+import kagamihoge.lifegameonjavafx.core.LifeGame;
 
 public class LifeGameTimer extends AnimationTimer {
     private static long oneSecond = 1000_000_000;

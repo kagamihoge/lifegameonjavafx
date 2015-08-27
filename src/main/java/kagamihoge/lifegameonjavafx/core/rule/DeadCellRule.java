@@ -1,4 +1,4 @@
-package kagamihoge.lifegamewithoopexercise.core.rule;
+package kagamihoge.lifegameonjavafx.core.rule;
 
 public class DeadCellRule {
 

@@ -5,7 +5,7 @@ import static kagamihoge.lifegamewithoopexercise.ui.Cell.SIZE;
 import javafx.beans.property.DoubleProperty;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.SingleSelectionModel;
-import kagamihoge.lifegamewithoopexercise.core.LifeGame;
+import kagamihoge.lifegameonjavafx.core.LifeGame;
 
 public class LifeGameModel {
     private SingleSelectionModel<Integer> heightComboBoxModel;

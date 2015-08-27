@@ -19,8 +19,8 @@ import javafx.scene.control.Slider;
 import javafx.scene.control.TitledPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-import kagamihoge.lifegamewithoopexercise.ui.eventhandler.ControllButtonOnClickHandler;
-import kagamihoge.lifegamewithoopexercise.ui.eventhandler.StartButtonOnClickHander;
+import kagamihoge.lifegameonjavafx.ui.eventhandler.ControllButtonOnClickHandler;
+import kagamihoge.lifegameonjavafx.ui.eventhandler.StartButtonOnClickHander;
 import kagamihoge.lifegamewithoopexercise.ui.model.LifeGameModel;
 
 public class LifeGameController implements Initializable {

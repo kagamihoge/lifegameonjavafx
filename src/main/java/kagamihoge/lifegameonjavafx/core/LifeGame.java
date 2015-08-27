@@ -1,6 +1,6 @@
-package kagamihoge.lifegamewithoopexercise.core;
+package kagamihoge.lifegameonjavafx.core;
 
-import kagamihoge.lifegamewithoopexercise.core.cell.CellFactory;
+import kagamihoge.lifegameonjavafx.core.cell.CellFactory;
 import kagamihoge.lifegamewithoopexercise.core.cell.impl.CellDefaultFactory;
 import kagamihoge.lifegamewithoopexercise.core.event.CellTransitionEventHandler;
 import kagamihoge.lifegamewithoopexercise.core.grid.GridOfCells;
